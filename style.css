@@ -1,0 +1,160 @@
+/* Reset some default browser styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #333, #fff, #333);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    transition: background 5s linear;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Style the header */
+.header {
+    background-color: transparent;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the shiny text */
+.shiny-text {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #352b2b, #5e5959, #d19e9e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+}
+
+/* Style the container */
+.container {
+    background-color: #221b1b;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the heading */
+.container h2 {
+    color: #c0c0c0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Style the label and input */
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #c0c0c0;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Style the Calculate button */
+#calculate {
+    background: linear-gradient(135deg, #c0c0c0, #d3d3d3, #c0c0c0);
+    color: #333;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s, box-shadow 0.3s;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Change button color and add a subtle shadow on hover */
+#calculate:hover {
+    background: linear-gradient(135deg, #d3d3d3, #c0c0c0, #d3d3d3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the result container */
+.result-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Style the result text */
+#age-result {
+    font-size: 20px;
+    color: #666;
+    margin: 20px 0;
+}
+
+/* Center the "Welcome" text */
+.header h1 {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Style links */
+a {
+    color: #c0c0c0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #dac4c4;
+    text-decoration: underline;
+}
+
+/* Your additional CSS code here */
+/* Style the "About Us" button */
+.footer-button a:nth-child(1) {
+    background-color: #8B4513; /* Dark Brown */
+    color: #FFF; /* White text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the "Privacy Policy" button */
+.footer-button a:nth-child(2) {
+    background-color: #8B4513; /* Dark Brown */
+    color: #FFF; /* White text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add some spacing between buttons */
+.footer-button + .footer-button {
+    margin-left: 10px;
+}
